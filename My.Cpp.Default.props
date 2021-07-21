@@ -5,7 +5,6 @@
     <PropertyGroup>
     <OutDir>$(SolutionDir)..\build\$(SDKIdentifier.ToLower())\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</OutDir>
     <IntDir>$(SolutionDir)..\build\.objs\$(MSBuildProjectName.ToLower())\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</IntDir>
-    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
     </PropertyGroup>
 
     <!-- Global -->
