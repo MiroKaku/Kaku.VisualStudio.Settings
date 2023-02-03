@@ -3,8 +3,8 @@
 
   <!-- General -->
   <PropertyGroup>
-  <OutDir>$(SolutionDir)build\$(SDKIdentifier.ToLower())\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</OutDir>
-  <IntDir>$(SolutionDir)build\.objs\$(ProjectName)\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</IntDir>
+    <OutDir>$(SolutionDir)build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\.objs\$(MSBuildProjectName.ToLower())\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</IntDir>
   </PropertyGroup>
 
   <!-- Global -->
@@ -18,6 +18,11 @@
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <ObjectFileName>$(IntDir)anyname\%(RelativeDir)%(FileName).obj</ObjectFileName>
       <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <!--
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Universal.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>%(PrecompiledHeaderFile);%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      -->
     </ClCompile>
   </ItemDefinitionGroup>
 
