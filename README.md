@@ -1,3 +1,3 @@
-# My Props
+# Kaku.VisualStudio.Settings
 
-My Props is a delightful, open source, for managing your Visual Studio configuration.
+Visual Studio settings preferences, and configuration templates for VC++.
