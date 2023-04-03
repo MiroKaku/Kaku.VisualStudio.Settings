@@ -3,7 +3,7 @@
 
   <!-- General -->
   <PropertyGroup>
-    <OutDir>$(SolutionDir)build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)build\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</OutDir>
     <IntDir>$(SolutionDir)build\.objs\$(MSBuildProjectName.ToLower())\$(PlatformShortName.ToLower())\$(Configuration.ToLower())\</IntDir>
   </PropertyGroup>
 
